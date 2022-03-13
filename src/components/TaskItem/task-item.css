@@ -1,0 +1,46 @@
+.task-item {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+  cursor: pointer;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 8px 4px;
+  color: #222;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task-item input[type="text"] {
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.task-item select {
+  justify-self: flex-end;
+  margin-top: 5%;
+}
+
+.task-item .btn-delete {
+  align-self: flex-end;
+  justify-content: flex-start;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background: #f73939;
+  transition: background-color 0.3s;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.task-item .lblTask {
+  justify-self: center;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
