@@ -1,2 +1,2 @@
-# kanban-ggms
-Created with CodeSandbox
+# Kanban GGMS
+
