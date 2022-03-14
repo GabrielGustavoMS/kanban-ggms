@@ -14,7 +14,11 @@ export default function App() {
     return [];
   });
   useEffect(() => {
-    setTasks(JSON.parse(window.localStorage.getItem("react-kanban-tasks")));
+    if (localStorage.getItem("react-kanban-tasks")) {
+      setTasks(JSON.parse(window.localStorage.getItem("react-kanban-tasks")));
+    } else {
+      setTasks([]);
+    }
   }, []);
   useEffect(() => {
     window.localStorage.setItem("react-kanban-tasks", JSON.stringify(tasks));
